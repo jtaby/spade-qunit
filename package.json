@@ -1,51 +1,39 @@
 {
-	"name": "qunit",
+	"name": "spade-qunit",
 	"version": "1.0.0",
-	"author": "The jQuery Project",
-	"contributors": [
-	{
-		"name": "John Resig",
-		"email": "jeresig@gmail.com",
-		"url": "http://ejohn.org/"
-	},
-	{
-		"name": "Jörn Zaefferer",
-		"email": "joern.zaefferer@googlemail.com",
-		"url": "http://bassistance.de/"
-	}],
-	"url": "http://docs.jquery.com/QUnit",
+	"author": "Tom Dale",
+  "homepage": "http://github.com/tomdale/spade-qunit",
+
+  "dependencies": {
+    "qunit": "~> 1.0.0",
+    "spade": "~> 1.0.0"
+  },
+
+  "directories": {
+    "lib": "lib"
+  },
+
 	"license": {
 		"name": "MIT",
 		"url": "http://www.opensource.org/licenses/mit-license.php"
 	},
-	"description": "An easy-to-use JavaScript Unit Testing framework.",
-	"summary": "JavaScript Unit Testing framework",
-	"homepage": "http://docs.jquery.com/QUnit",
-	"directories": {
-	  "lib": "qunit"
-	},
-	"keywords": [ "testing", "unit", "jquery" ],
-	"lib": "qunit",
+
+	"description": "A test harness for packages that use spade and QUnit",
+	"summary": "A test harness for packages that use spade and QUnit",
+
+	"keywords": [ "testing", "unit", "jquery", "spade" ],
 	
 	"bpm:build": {
-	  "bpm_libs.js": {
-	    "directories": []
-	  },
-	  
-	  "bpm_styles.css": {
-	    "directories": []
-	  },
-	  
-	  "qunit": {
+	  "spade-qunit": {
 	    "assets": ["index.html"]
 	  },
-	  
-	  "qunit/qunit_styles.css": {
-	    "directories": ["qunit"]
+
+	  "spade-qunit/qunit.css": {
+	    "directories": ["lib"]
 	  },
-	  
-	  "qunit/qunit_libs.js": {
-	    "directories": ["qunit"]
+
+	  "spade-qunit/qunit.js": {
+	    "directories": ["lib"]
 	  }
 	}
 }
