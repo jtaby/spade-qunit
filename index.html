@@ -18,6 +18,8 @@
     <script src="../qunit/qunit_libs.js" type="text/javascript"></script>
 
     <script type="text/javascript">
+      window.console = window.console || { log: function() {} };
+
       // Get package names from URL, in the form:
       // http://localhost:4020/assets/spade-qunit/index.html?package=sproutcore-metal,sproutcore-runtime
 
